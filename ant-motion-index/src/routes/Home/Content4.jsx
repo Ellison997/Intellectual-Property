@@ -6,7 +6,7 @@ import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 class Content extends React.Component {
 
   static defaultProps = {
-    className: 'content2',
+    className: 'content4',
   };
 
   getDelay = e => e % 3 * 100 + Math.floor(e / 3) * 100 + 300;

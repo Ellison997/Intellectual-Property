@@ -28,7 +28,7 @@ class Content extends React.Component {
     const props = { ...this.props };
     delete props.isMode;
     const dataSource = [
-      { icon: '/fangdajing.png', title: '提供服务', content: '为当事人提供各种业务的咨询、查询服务' },
+      { icon: '/fangdajing.png', title: '提供服务', content: '为当事人提供各种知识产权业务的咨询、查询服务' },
       { icon: '/chuizi.png', title: '案件解决方案', content: '为重大涉外案件提供纠纷案件解决参考方案' },
       { icon: '/yujing.png', title: '知识产权预警', content: '为组织提供知识产权专家论证和知识产权预警服务' },
       { icon: '/dunpai.png', title: '保护方案', content: '为大型文体赛事和展会组委会设计知识产权保护方案' },

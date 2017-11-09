@@ -6,7 +6,7 @@ import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 class Content extends React.Component {
 
   static defaultProps = {
-    className: 'content6',
+    className: 'content1',
   };
 
   render() {
