@@ -1,0 +1,47 @@
+@import './custom.less';
+
+@content5: content5;
+.@{content5} {
+  & .content-template-wrapper content5-wrapper{
+
+   & .iframe-div{
+
+    & .iframe{
+    width: 1000px;
+    height: 1000px;
+    }
+  }
+  }
+ 
+}
+
+@media screen and (max-width: 767px) {
+  .@{content5}-wrapper {
+    height: 800px;
+    overflow: hidden;
+    .@{content5} {
+      width: 90%;
+      max-width: 100%;
+      &-img, &-text {
+        display: block;
+        width: 100%;
+        top: auto;
+        left: auto;
+        right: auto;
+      }
+      &-text {
+        height: 430px;
+        > h1 {
+          margin: 40px auto 20px;
+          font-size: 24px;
+        }
+        > h1, > p {
+          text-align: center;
+        }
+      }
+      &-img {
+        margin-top: 20px;
+      }
+    }
+  }
+}

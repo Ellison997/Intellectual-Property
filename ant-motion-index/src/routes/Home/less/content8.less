@@ -1,0 +1,124 @@
+@import './custom.less';
+
+@content10: content10;
+
+.@{content10} {
+  &-img {
+    display: block;
+    width: 40%;
+    height: 150px;
+    vertical-align: top;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-right: 40px;
+    text-align: center;
+    right:0;
+
+
+      .shenqing{
+       // margin-top: 10px;
+        font-size: 32px; 
+      }
+      .duixiang{ 
+        margin-top: 20px;
+        font-size: 18px;
+        
+        }
+
+    .miaoshu{
+     position: absolute;
+     margin-top: 20px;
+     margin-right: 120px;
+     width: 70%;
+     text-align: center;
+      
+     
+      }
+
+    span {
+      display: block;
+      position: absolute;
+      width: 55%;
+      left: 10%;
+      line-height: 30vh;
+      height: 30vh;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+  &-text {
+    display: block;
+    width: 40%;
+    height: 150px;
+    vertical-align: top;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-left: 40px;
+    text-align: center;
+    & p, & h1 {
+      position: relative !important;
+      width: 75%;
+      float: right;
+    }
+    & h1 {
+      font-size: 32px;
+      font-weight: normal;
+      color: #404040;
+    }
+    & p {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .@{content10}-wrapper {
+    height: 400px;
+    .@{content10} {
+      overflow: hidden;
+      width: 90%;
+      margin: auto;
+      &-img, &-text {
+        width: 100%;
+        display: block;
+        position: relative;
+        text-align: center;
+      }
+      &-img {
+        margin: 20px auto;
+        height: 200px;
+        span {
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 180px;
+          height: 200px;
+          line-height: 200px;
+        }
+      }
+      &-text {
+        height: 140px;
+        margin-top: 20px;
+        p, h1 {
+          width: 100%;
+          top: auto;
+        }
+        p {
+          margin-top: 20px;
+        }
+        h1 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

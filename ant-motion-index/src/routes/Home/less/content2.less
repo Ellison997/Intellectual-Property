@@ -1,0 +1,193 @@
+@import './custom.less';
+
+@banner2: banner2;
+.@{banner2} {
+  width: 100%;
+  // 如果在第一屏且导航位置为 relative, 一屏为 height: calc(~"100vh - 64px");
+  height: 90vh;
+  position: relative;
+  border-color: #666;
+  background: #fff;
+  &-wrapper, .banner-anim {
+    height: 100%;
+  }
+
+  & .queue-anim-leaving {
+    position: relative !important;
+    width: auto;
+  }
+  .banner-user-elem {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .banner-user-elem .banner-user-title {
+    font-size: 22px;
+    top: 40%;
+  }
+  .banner-user-elem .banner-user-text {
+    top: 40%;
+  }
+ 
+  &-img {
+    height: 100%;
+    width: 60%;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    span {
+      display: block;
+      position: absolute;
+      width: 85%;
+      left: 5%;
+      line-height: 50vh;
+      height: 60vh;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+  &-text {
+    display: block;
+    width: 40%;
+    height: 350px;
+    vertical-align: top;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    & p, & h1 {
+      position: relative !important;
+      width: 75%;
+      float: right;
+    }
+    & h1 {
+      font-size: 32px;
+      font-weight: normal;
+      color: #404040;
+    }
+    & p {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  }
+
+  &-title {
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.block1{
+  .@{banner2}-img {
+    width: 50%;
+    span {
+      height: 70vh;
+      img{
+        margin-left: 10%;
+      }
+    }
+  }
+  .@{banner2}-text{
+    width: 50%;
+    height: 350px;
+    & p,& h1{
+      text-align: center;
+    }
+    & p img{
+      width: 200px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.banner-anim-thumb-default span {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.banner-anim-thumb-default span.active{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 414px) {
+  .@{banner2}{
+    &-title{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .@{banner2}-wrapper {
+    height: 600px;
+    .@{banner2} {
+      overflow: hidden;
+      width: 90%;
+      margin: auto;
+      &-img, &-text {
+        width: 100%;
+        display: block;
+        position: relative;
+        text-align: center;
+      }
+      &-img {
+        margin: 40px auto;
+        height: 200px;
+        span {
+          right: 0;
+          left: 0;
+          margin: auto;
+          // width: 180px;
+          height: 200px;
+          line-height: 200px;
+        }
+      }
+      &-text {
+        height: 140px;
+        margin-top: 20px;
+        p, h1 {
+          width: 100%;
+          top: auto;
+        }
+        p {
+          margin-top: 20px;
+        }
+        h1 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .block1{
+    .@{banner2}-img {
+      height: 350px;
+      margin: 0;
+      span {
+        width: 100%;
+        height: 350px;
+        img {
+          margin-left: 0;
+        }
+      }
+    }
+    .@{banner2}-text{
+      width: 100%;
+      height: 390px;
+      margin-top: 0px;
+      & p,& h1{
+        margin-top: 0px;
+        text-align: center;
+      }
+      & p img{
+        width: 150px;
+      }
+    }
+  }
+}

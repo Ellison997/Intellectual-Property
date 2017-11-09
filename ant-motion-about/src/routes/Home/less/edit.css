@@ -1,0 +1,4 @@
+#content_2_0{height: 100vh;}
+@media screen and (max-width: 767px) {
+    #content_2_0{height: 150vh;}
+}

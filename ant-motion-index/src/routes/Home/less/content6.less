@@ -1,0 +1,139 @@
+@import './custom.less';
+
+@content9: content9;
+
+.@{content9} {
+  height: 50vh;
+  &-img {
+    height: 100%;
+    width: 40%;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    
+   .miaoshu{
+     position: absolute;
+     margin-top: 115px;
+     margin-left: 65px;
+     width: 75%;
+      .yuanzhu{
+        font-size: 32px;        
+      }
+      .shenqing{
+        margin-top: 10px;
+        font-size: 32px; 
+      }
+      .duixiang{ 
+        font-size: 18px;
+        
+        }
+      }
+
+    span {
+      display: block;
+      position: absolute;
+      width: 60%;
+      left: 0%;
+      right: 0%;
+      line-height: 50vh;
+      height: 50vh;
+      margin: auto;
+      top: 40px;
+      bottom: 0;
+      img {
+        vertical-align: middle;
+      }
+      
+      
+    }
+  }
+  &-text {
+    display: block;
+    width: 60%;
+    height: 150px;
+    vertical-align: top;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    & p, & h1 {
+      position: relative !important;
+      width: 75%;
+      float: left;
+      left: 20%;
+    }
+    & h1 {
+      font-size: 32px;
+      font-weight: normal;
+      color: #404040;
+    }
+    & p {
+      margin-top: 20px;
+      font-size: 22px;
+      
+     .span2{
+        margin-top: 20px;
+        font-size: 80px;
+        color:#B00000;
+      }
+      .span1{
+     margin-top: 20px;
+        font-size: 50px;
+        color:#404040;
+  }
+
+    }
+    
+   
+  }
+
+  
+}
+
+@media screen and (max-width: 767px) {
+  .@{content9}-wrapper {
+    height: 400px;
+    .@{content9} {
+      overflow: hidden;
+      width: 90%;
+      margin: auto;
+      &-img, &-text {
+        width: 100%;
+        display: block;
+        position: relative;
+        text-align: center;
+      }
+      &-img {
+        margin: 20px auto;
+        height: 200px;
+        span {
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 280px;
+          height: 220px;
+          line-height: 200px;
+        }
+      }
+      &-text {
+        height: 140px;
+        margin-top: 20px;
+        p, h1 {
+          width: 100%;
+          top: auto;
+        }
+        p {
+          margin-top: 20px;
+          span{
+          margin-top: 20px;
+          font-size: 20px;
+          color:#B00000;
+          }
+        }
+        h1 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
