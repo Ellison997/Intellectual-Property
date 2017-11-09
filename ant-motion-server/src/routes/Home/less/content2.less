@@ -1,11 +1,11 @@
 @import './custom.less';
 
-@content0: content0;
+@content2: content2;
 
-.@{content0} {
+.@{content2} {
   &-img {
     height: 100%;
-    width:70%;
+    width:50%;
     overflow: hidden;
     position: absolute;
     left: 0;
@@ -26,13 +26,13 @@
   }
   &-text {
     display: block;
-    width: 40%;
+    width: 50%;
     height: 150px;
-    vertical-align: top;
+    // vertical-align: top;
     position: absolute;
     top: 0;
     bottom: 0;
-    margin: auto;
+    margin: auto 10% auto auto;
     right: 0;
     & p, & h1 {
       position: relative !important;
@@ -46,16 +46,17 @@
     }
     & p {
       margin-top: 20px;
-      font-size: 14px;
+      font-size: 16px;
       float: right;
+      text-indent: 2em;
     }
   }
 }
 
 @media screen and (max-width: 767px) {
-  .@{content0}-wrapper {
+  .@{content2}-wrapper {
     height: 400px;
-    .@{content0} {
+    .@{content2} {
       overflow: hidden;
       width: 90%;
       margin: auto;

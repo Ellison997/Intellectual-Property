@@ -1,7 +1,7 @@
 @import './custom.less';
 
-@content5: content5;
-.@{content5} {
+@content4: content4;
+.@{content4} {
   &-text {
     width: 35%;
     display: inline-block;
@@ -35,11 +35,14 @@
         }
         & h2, & p {
           margin-left: 45px;
-          font-size: 14px;
+          // font-size: 14px;
         }
         & h2 {
-          font-size: 16px;
+          font-size: 18px;
           margin-bottom: 10px;
+        }
+        & p{
+          font-size: 16px;
         }
       }
     }
@@ -48,17 +51,17 @@
     width: 50%;
     display: inline-block;
     position: relative;
-    float: right;
+    // float: right;
     top: 15%;
-    right: 5%;
+    right: -15%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .@{content5}-wrapper {
+  .@{content4}-wrapper {
     height: 800px;
     overflow: hidden;
-    .@{content5} {
+    .@{content4} {
       width: 90%;
       max-width: 100%;
       &-img, &-text {

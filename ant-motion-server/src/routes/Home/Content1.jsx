@@ -12,7 +12,7 @@ class Content extends React.Component {
   };
 
   static defaultProps = {
-    className: 'content5',
+    className: 'content1',
   };
 
   getBlockChildren = (item, i) =>
