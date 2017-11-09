@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+﻿import React, { PropTypes } from 'react';
 import { Button, Icon } from 'antd';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne, { TweenOneGroup } from 'rc-tween-one';
@@ -41,7 +41,7 @@ class Banner extends React.Component {
             key="contentOne"
             id={`${props.id}-contentBlock0`}
           >
-            让数据说话      用心助力创新
+            让数据说话     用心助力创新
           </h1>
           <h2
             key="contentTwo"
