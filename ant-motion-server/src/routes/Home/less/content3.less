@@ -57,9 +57,10 @@
 
 @media screen and (max-width: 767px) {
   .@{content3}-wrapper {
-    height: 400px;
+    height: 100%;
     .@{content3} {
       overflow: hidden;
+      height: 100%;
       width: 90%;
       margin: auto;
       &-img, &-text {
@@ -70,25 +71,29 @@
       }
       &-img {
         margin: 20px auto;
-        height: 200px;
+        height: 400px;
         span {
           right: 0;
-          left: 0;
+          left: -5%;
+          top: 10%;
           margin: auto;
-          width: 180px;
-          height: 200px;
+          width: 380px;
+          height: 400px;
           line-height: 200px;
         }
       }
       &-text {
         height: 140px;
         margin-top: 20px;
+        margin-left: 5%;
+        width: 90%;
         p, h1 {
           width: 100%;
           top: auto;
         }
         p {
           margin-top: 20px;
+          // font-size: 12px;
         }
         h1 {
           font-size: 24px;

@@ -51,7 +51,7 @@ class Content extends React.Component {
             <p key="p" id={`${props.id}-content`}>
             利用知识产权竞争情报分析等手段，对重大经济科技活动所涉及的知识产权整体情况和竞争状况进行综合分析、评估、评价和审查。
             </p>
-          </QueueAnim>
+          </QueueAnim> 
         </OverPack>
       </div>
     );

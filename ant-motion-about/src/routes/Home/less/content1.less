@@ -1,8 +1,8 @@
 @import './custom.less';
 
-@content0: content0;
+@content1: content1;
 
-.@{content0} {
+.@{content1} {
   // &-img {
   //   height: 100%;
   //   width: 40%;
@@ -41,6 +41,7 @@
       font-size: 32px;
       font-weight: normal;
       color: #404040;
+      letter-spacing: 4px;
     }
     & p {
       text-indent:2em;
@@ -51,48 +52,19 @@
 }
 
 @media screen and (max-width: 767px) {
-  .@{content0}-wrapper {
+  .@{content1}-wrapper {
     height: 400px;
-    .@{content0} {
+    .@{content1} {
       overflow: hidden;
       width: 90%;
       margin: auto;
-      // &-img, &-text {
-      //   width: 100%;
-      //   display: block;
-      //   position: relative;
-      //   text-align: center;
-      // }
-      // &-img {
-      //   height: 200px;
-      //   margin: 20px auto;
-      //   span {
-      //     right: 0;
-      //     left: 0;
-      //     margin: auto;
-      //     width: 180px;
-      //     height: 200px;
-      //     line-height: 200px;
-      //   }
-      // }
-      // &-text {
-      //   height: 140px;
-      //   margin-bottom: 20px;
-      //   p, h1 {
-      //     width: 100%;
-      //     top: auto;
-      //   }
-      //   h1{
-      //     margin: 10px auto;
-      //     font-size: 24px;
-      //   }
-      // }
       &-text {
         display: block;
-        width: 100%;
+        margin-left: 5%;
+        width: 90%;
         height: 150px;
         position: absolute;
-        top: -700px;
+        top: -400px;
         bottom: 0;
         margin: auto;
         right: 0;

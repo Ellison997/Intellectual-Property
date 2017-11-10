@@ -15,7 +15,7 @@
     }
     & > h1 {
       position: relative;
-    }
+    } 
     & > p {
       position: relative;
       margin-top: 10px;
@@ -29,8 +29,8 @@
         margin-top: 8%;
         & span {
           display: inline-block;
-          width: 30px;
-          height: 30px;
+          width: 18px;
+          height: 18px;
           position: absolute;
         }
         & h2, & p {
@@ -42,6 +42,7 @@
           margin-bottom: 10px;
         }
         & p{
+          text-indent: 2em;
           font-size: 16px;
         }
       }
@@ -59,20 +60,23 @@
 
 @media screen and (max-width: 767px) {
   .@{content4}-wrapper {
-    height: 800px;
+    height: 150vh;
     overflow: hidden;
     .@{content4} {
       width: 90%;
       max-width: 100%;
       &-img, &-text {
         display: block;
-        width: 100%;
+        width: 90%;
+        left: 5%;
         top: auto;
         left: auto;
         right: auto;
       }
       &-text {
         height: 430px;
+        width: 90%;
+        left: 5%;
         > h1 {
           margin: 40px auto 20px;
           font-size: 24px;
@@ -80,9 +84,35 @@
         > h1, > p {
           text-align: center;
         }
+        & ul {
+          position: relative;
+          margin-top: -10%; 
+          display: inline-block;
+          & li {
+            margin-top: 8%;
+            & span {
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              position: absolute;
+            }
+            & h2, & p {
+              margin-left: 45px;
+            }
+            & h2 {
+              margin-bottom: 10px;
+            }
+            & p{
+              text-indent: 2em;
+            }
+          }
+        }
       }
       &-img {
-        margin-top: 20px;
+        width: 80%;
+        position: relative;
+        top: 10%;
+        left: 10%;
       }
     }
   }

@@ -32,8 +32,8 @@ class Content extends React.Component {
     const props = { ...this.props };
     const isMode = props.isMode;
     const dataSource = [
-      { img: 'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png', title: '技术', content: '通过分解和分析行业、企业、产品中包含的技术内容，上下游技术，竞争对手情况，制定数据库建库的逻辑检索式。' },
-      { img: 'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png', title: '融合', content: '通过数据库建库流程的各节点控制，经过多次的人工检索和智能分析，保证专利数据库结果的查全和查准率。' },
+      { img: 'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png', title: '技术', content: '分解和分析行业、企业、产品中包含的技术内容，竞争对手情况，制定数据库建库的逻辑检索式。' },
+      { img: 'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png', title: '融合', content: '数据库建库流程的各节点控制，多次人工检索和智能分析，保证专利数据库结果的查全和查准率。' },
       { img: 'https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png', title: '开发', content: '用户在数据库内进行快速的检索、浏览与分析。准确分析专利数据，掌握整体技术' },
     ];
     const ulChildren = dataSource.map(this.getBlockChildren);
@@ -42,7 +42,7 @@ class Content extends React.Component {
     const imgAnim = isMode ? { y: 30, opacity: 0, delay: 400, type: 'from', ease: 'easeOutQuad' }
       : { x: 30, opacity: 0, type: 'from', ease: 'easeOutQuad' };
     return (
-      <div {...props} className="content-template-wrapper content5-wrapper">
+      <div {...props} className="content-template-wrapper content4-wrapper">
         <OverPack
           className={`content-template ${props.className}`}
           location={props.id}

@@ -43,7 +43,7 @@ class Content extends React.Component {
     const imgAnim = isMode ? { y: 30, opacity: 0, delay: 400, type: 'from', ease: 'easeOutQuad' }
       : { x: 30, opacity: 0, type: 'from', ease: 'easeOutQuad' };
     return (
-      <div {...props} className="content-template-wrapper content5-wrapper">
+      <div {...props} className="content-template-wrapper content1-wrapper">
         <OverPack
           className={`content-template ${props.className}`}
           location={props.id}
@@ -55,7 +55,7 @@ class Content extends React.Component {
             leaveReverse
             ease={['easeOutQuad', 'easeInQuad']}
             id={`${props.id}-textWrapper`}
-          >
+          > 
            <h1
               key="h1"
               

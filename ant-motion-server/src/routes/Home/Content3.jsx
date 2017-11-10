@@ -36,7 +36,7 @@ class Content extends React.Component {
             id={`${props.id}-textWrapper`}
           >
             <h1 key="h1" id={`${props.id}-title`}>
-              专利运营
+              专利运营 
             </h1>
             <p key="p" id={`${props.id}-content`}>
               中心依托自身强大的专利信息平台、评估实力对企业的现有专利或专利申请进行管理，促进其专利技术的应用和转化，实现企业专利技术价值或者效能。

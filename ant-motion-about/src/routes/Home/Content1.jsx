@@ -5,7 +5,7 @@ import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 
 class Content extends React.Component {
   static defaultProps = {
-    className: 'content0',
+    className: 'content1',
   };
 
   render() {
@@ -22,31 +22,20 @@ class Content extends React.Component {
         {...props}
         className={`content-template-wrapper content-half-wrapper ${props.className}-wrapper`}
       >
-        <OverPack
+        <div
           className={`content-template ${props.className}`}
           location={props.id}
         >
-          {/* <TweenOne
-            key="img"
-            animation={animType.one}
-            className={`${props.className}-img`}
-            id={`${props.id}-imgWrapper`}
-            resetStyleBool
-          >
-            <span id={`${props.id}-img`}>
-              <img width="100%" src="https://zos.alipayobjects.com/rmsportal/nLzbeGQLPyBJoli.png" />
-            </span>
-          </TweenOne> */}
-          <QueueAnim
+          <div
             className={`${props.className}-text`}
             //type={animType.queue}
             key="text"
             leaveReverse
             ease={['easeOutCubic', 'easeInCubic']}
-            id={`${props.id}-textWrapper`}
+            id={`${props.id}-textWrapper`} 
           >
             <h1 key="h1" id={`${props.id}-title`}>
-            山东省专利信息服务中心介绍
+           专利信息服务中心介绍
             </h1>
             <p key="p1" id={`${props.id}-content1`}>
             山东省专利信息服务中心，是经山东省编办批准成立，隶属于山东省知识产权局的事业单位。多年来，中心一直致力于为我省及所辐射区域搭建知识产权
@@ -57,8 +46,8 @@ class Content extends React.Component {
             且有多名全国专利信息领军人才、师资人才、信息化项目管理师、GB/T29490外审员、专利分析师、专利代理人和律师，可为我省及所辐射区域的经济发展、产业
             转型升级、新兴产业发展等战略发展目标的实现发挥出积极作用。
             </p>
-          </QueueAnim>
-        </OverPack>
+          </div>
+        </div>
       </div>
     );
   }
