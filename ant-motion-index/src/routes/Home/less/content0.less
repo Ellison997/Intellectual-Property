@@ -113,6 +113,7 @@
     }
     & .div1 {
       float: left;
+      
       & img{
         height: 18vh;
       }
@@ -145,6 +146,7 @@
       & .android{
         background: #fff;
         padding: 0 0 0 38px;
+        
         width: 260px;
         height: 8vh;
         // line-height: 66px;
@@ -217,6 +219,7 @@
 }
 
 @media screen and (max-width: 414px) {
+  
   .@{banner1}{
     &-title{
       width: 90%;
@@ -230,10 +233,11 @@
       color: #fff;
       font-size: 24px;
       word-wrap: break-word;
+      white-space:inherit	
     }
 
     & h2{
-      font-size: 20px;
+      font-size: 16px;
     }
 
     & .retrieval{
@@ -256,17 +260,20 @@
     }
     & .div2{
       & .apple{
-        // margin-top: 10px;
+       
         border: 1px solid #fff;
         color: #fff;
         background: transparent;
         box-shadow: 0 0 0 transparent;
+        padding: 0 0 0 23px;
         transition: background .45s @ease-out, box-shadow .45s @ease-out;
-        height: 10vh;
+        //height: 10vh;
+        display: block;
         line-height: 4vh;
         font-size: 20px;
+        margin:0 auto;
         width: 25vh;
-        height: 36px;
+        height: 33px;
         & span {
           text-shadow: 0 0 0 rgba(0, 0, 0, 0);
           transition: text-shadow .45s @ease-out;
@@ -292,18 +299,21 @@
         }
       }
       & .android{
-        // margin-top: 5px;
+         
         border: 1px solid #fff;
         color: #fff;
         background: transparent;
         box-shadow: 0 0 0 transparent;
+        padding: 0 0 0 23px;
         transition: background .45s @ease-out, box-shadow .45s @ease-out;
-        height: 10vh;
+        //height: 10vh;
+        display: block;
         line-height: 4vh;
-        margin-top: -2vh;
+        margin:0 auto;
+        margin-top: 0.8vh;
         width: 25vh;
         font-size: 20px;
-        height: 36px;
+        height: 33px;
         & span {
           text-shadow: 0 0 0 rgba(0, 0, 0, 0);
           transition: text-shadow .45s @ease-out;
@@ -341,6 +351,8 @@
 
     & .div2{
       float: none;
+      height: 20vh;
+     
     }
     // .bg {
     //   // background-attachment: inherit;

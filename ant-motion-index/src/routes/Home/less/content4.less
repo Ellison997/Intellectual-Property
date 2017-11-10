@@ -2,6 +2,7 @@
 
 @content4: content4;
 .@{content4} {
+  
   > h1 {
     text-align: center;
     position: relative;
@@ -22,26 +23,30 @@
       > li {
         display: inline-block;
         width: 33.33%;
-        padding: 6% 5% 0;
-        vertical-align: top;
-        .img {
+        padding: 3% 5% 0;
+        vertical-align:top;
+         .img {          
           display: inline-block;
-          width: 15%;
+          width: 8%;
           vertical-align: top;
+          margin-top: 3.5%;
+          }
         }
         .text {
           width: 85%;
           display: inline-block;
           padding-left: 8%;
           >h1{
-            font-size: 26px;
+            font-size: 18px;
+            
           }
-        }
+         
         & a{
           color: #404040;
         }
         & p{
           font-size: 16px;
+          text-indent: 2em;
         }
       }
     }
@@ -50,7 +55,7 @@
 
 @media screen and (max-width: 767px) {
   .@{content4}-wrapper {
-    height: 920px;
+    height: 1000px;
     .@{content4} {
       overflow: hidden;
       width: 90%;
@@ -73,8 +78,16 @@
             width: 90%;
             margin: auto;
             display: block;
+             .img {          
+         
+          width: 7%;
+         
+          }
             h1 {
-              font-size: 20px;
+              font-size: 16px;
+            }
+             p {
+              font-size: 12px;
             }
             &.queue-anim-leaving {
               position: relative !important;
