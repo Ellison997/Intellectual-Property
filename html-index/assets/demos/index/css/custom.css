@@ -20,3 +20,12 @@ body {
         margin: 14px 15px;
     }
 }
+
+.c-layout-footer-6 .c-postfooter .c-corp {
+    font-size: 15px;
+    margin: 0px;
+}
+
+.c-layout-footer-6 .c-postfooter .c-copyright {
+    float: right;
+}
