@@ -10,6 +10,9 @@ body {
     .c-page-on-scroll.c-layout-header-fixed .c-layout-header .c-brand {
         margin: 8px 0 19px 0;
     }
+    .c-layout-revo-slider-4 .form-horizontal {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -19,17 +22,38 @@ body {
     .c-layout-header .c-brand .c-hor-nav-toggler {
         margin: 14px 15px;
     }
+    .c-layout-revo-slider-4 .c-font-54 {
+        font-size: 22px;
+    }
+    .c-layout-revo-slider-4 .c-font-34 {
+        font-size: 18px;
+    }
+    .c-layout-revo-slider-4 .c-font-48 {
+        font-size: 22px;
+    }
+    .c-layout-revo-slider-4 .c-font-24 {
+        font-size: 18px;
+    }
+    .input-lg {
+        height: 32px;
+    }
+    .c-layout-revo-slider-4 .form-horizontal {
+        display: none;
+    }
+    .tp-banner .qr-code {
+        display: none;
+    }
+    .tparrows.circle {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .c-layout-revo-slider-4 .c-main-title-square {
     background: rgba(0, 0, 0, 0.21);
 }
 
-.c-layout-revo-slider-4 .form-horizontal {
-    margin-top: 20px;
-}
-
-.tp-banner .qr-code{
+.tp-banner .qr-code {
     margin-top: 10px;
 }
 
@@ -57,10 +81,9 @@ body {
 
 .c-layout-footer-6 .c-postfooter .c-copyright {
     float: right;
-
 }
 
-.c-font-colors{
+.c-font-colors {
     color: #838e9a !important;
 }
 
@@ -112,4 +135,12 @@ body {
 }
 
 
+.c-content-box.c-bg-parallax .container {
+    padding: 120px 0;
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+}
 
+.c-feature-15-desc{
+    text-indent: 2em;
+}
