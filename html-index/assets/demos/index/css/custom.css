@@ -1,0 +1,17 @@
+@media (min-width: 992px) {
+    .c-layout-header .c-brand {
+        margin: 26px 0 37px 0;
+    }
+    .c-page-on-scroll.c-layout-header-fixed .c-layout-header .c-brand {
+        margin: 8px 0 19px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .c-layout-header .c-brand {
+        margin: 6px 15px 7px 15px;
+    }
+    .c-layout-header .c-brand .c-hor-nav-toggler {
+        margin: 14px 15px;
+    }
+}
