@@ -138,6 +138,10 @@ body {
     font-size: 22px;
 }
 
+.c-content-box.c-size-lg {
+    padding: 0;
+}
+
 .c-content-box.c-bg-parallax .container {
     padding: 120px 0;
     background: rgba(0, 0, 0, 0.75);
@@ -148,6 +152,6 @@ body {
     text-indent: 2em;
 }
 
-.c-content-feature-4 .c-feature-content{
+.c-content-feature-4 .c-feature-content {
     width: 40%;
 }
