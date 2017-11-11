@@ -53,6 +53,10 @@ body {
     background: rgba(0, 0, 0, 0.21);
 }
 
+.c-layout-revo-slider-4 .form-horizontal {
+    margin-top: 20px;
+}
+
 .tp-banner .qr-code {
     margin-top: 10px;
 }
@@ -87,53 +91,52 @@ body {
     color: #838e9a !important;
 }
 
-.c-phone-img{
-    width:364px;
-    height: 648px;  
+.c-phone-img {
+    width: 364px;
+    height: 648px;
 }
 
-.helps{
-   border-right: 0;
+.helps {
+    border-right: 0;
     border-top: 0;
 }
 
-  .c-content-feature-4.c-content-lefts.c-diagonals {
-   border-right: 50px solid;
+.c-content-feature-4.c-content-lefts.c-diagonals {
+    border-right: 50px solid;
     border-top: 50px solid transparent;
 }
-.c-content-app-1 > .c-diagram > .c-lines-1 {
 
+.c-content-app-1>.c-diagram>.c-lines-1 {
     left: 40%;
-
-}
-.c-content-app-1 > .c-diagram > .c-wireframe {
-    left: 40%;
-   
-}
-.c-content-app-1 > .c-diagram > .c-phone-img {
-    left: 40%;
-    
 }
 
-.c-content-app-1 > .c-diagram > .c-point-1 {
-    left: 40%;
-   
-}
-.c-content-app-1 > .c-diagram > .c-point-2 {
-   
-    left: 40%;
-    
-}
-.c-content-app-1 > .c-diagram > .c-point-3 {
+.c-content-app-1>.c-diagram>.c-wireframe {
     left: 40%;
 }
-.c-content-app-1 > .c-diagram > .c-point-4 {
+
+.c-content-app-1>.c-diagram>.c-phone-img {
     left: 40%;
 }
-.font-sizes{
+
+.c-content-app-1>.c-diagram>.c-point-1 {
+    left: 40%;
+}
+
+.c-content-app-1>.c-diagram>.c-point-2 {
+    left: 40%;
+}
+
+.c-content-app-1>.c-diagram>.c-point-3 {
+    left: 40%;
+}
+
+.c-content-app-1>.c-diagram>.c-point-4 {
+    left: 40%;
+}
+
+.font-sizes {
     font-size: 22px;
 }
-
 
 .c-content-box.c-bg-parallax .container {
     padding: 120px 0;
@@ -141,7 +144,7 @@ body {
     width: 100%;
 }
 
-.c-feature-15-desc{
+.c-feature-15-desc {
     text-indent: 2em;
 }
 
