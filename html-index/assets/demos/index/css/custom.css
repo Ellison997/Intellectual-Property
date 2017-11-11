@@ -144,3 +144,7 @@ body {
 .c-feature-15-desc{
     text-indent: 2em;
 }
+
+.c-content-feature-4 .c-feature-content{
+    width: 40%;
+}
