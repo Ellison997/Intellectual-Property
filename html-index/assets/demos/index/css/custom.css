@@ -21,6 +21,35 @@ body {
     }
 }
 
+.c-layout-revo-slider-4 .c-main-title-square {
+    background: rgba(0, 0, 0, 0.21);
+}
+
+.c-layout-revo-slider-4 .form-horizontal {
+    margin-top: 20px;
+}
+
+.tp-banner .qr-code{
+    margin-top: 10px;
+}
+
+.tp-banner .c-icons {
+    width: auto;
+    margin-top: 10px;
+}
+
+.tp-banner .c-icons>.socicon-btn {
+    width: auto;
+    height: auto;
+    padding: 13px;
+    margin-left: -1px;
+    background-color: #ffffff;
+}
+
+.tp-banner .c-icons>.socicon-btn:hover {
+    background-color: #eeeeee;
+}
+
 .c-layout-footer-6 .c-postfooter .c-corp {
     font-size: 15px;
     margin: 0px;
@@ -28,10 +57,12 @@ body {
 
 .c-layout-footer-6 .c-postfooter .c-copyright {
     float: right;
-}
 
+}
 
 .c-font-colors{
     color: #838e9a !important;
 }
+
+
 
