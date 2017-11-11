@@ -23,7 +23,7 @@ class Content extends React.Component {
         {...props}
         className={`content-template-wrapper content-half-wrapper ${props.className}-wrapper`}
       >
-        <OverPack
+        <div
           className={`content-template ${props.className}`}
           location={props.id}
         >
@@ -32,6 +32,7 @@ class Content extends React.Component {
             className={`${props.className}-text`}
             key="text"
             leaveReverse
+            
             ease={['easeOutCubic', 'easeInCubic']}
             id={`${props.id}-textWrapper`}
           >
@@ -39,7 +40,7 @@ class Content extends React.Component {
               知识产权援助维护,维权更便捷
             </h1>
             <p key="p" id={`${props.id}-content`}>
-              举报投诉电话：<br />
+              举报投诉电话:<br />
             <span className="span1">0531-</span> <span className="span2">12330</span>         
             </p>
 
@@ -59,7 +60,7 @@ class Content extends React.Component {
          
  
           </TweenOne>
-        </OverPack>
+        </div>
       </div>
     );
   }

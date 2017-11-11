@@ -4,8 +4,8 @@
 .@{banner0} {
   width: 100%;
   // 如果在第一屏且导航位置为 relative, 一屏为 height: calc(~"100vh - 64px");
-  height: 65vh;
-  //height: calc(~"100vh - 64px");
+  //height: 65vh;
+  height: calc(~"100vh - 64px");
   position: relative;
   text-align: center;
   border-color: #666;
@@ -144,10 +144,13 @@
       color: #fff;
       font-size: 24px;
       word-wrap: break-word;
-      white-space:inherit	
+      white-space:inherit;	
     }
      & h2{
       font-size: 16px;
+      width: 90%;
+       word-wrap: break-word;
+     
     }
     }
     &:before {

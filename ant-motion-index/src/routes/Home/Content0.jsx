@@ -55,9 +55,7 @@ class Banner extends React.Component {
             className="retrieval"
             id={`${props.id}-buttonBlock0`}
             onClick={this.handleSizeChange}
-          >
-            专利检索
-          </Button>
+          >专利检索</Button>
         </QueueAnim>
       </Element>,
       <Element key={1}
