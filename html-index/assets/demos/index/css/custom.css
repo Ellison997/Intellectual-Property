@@ -96,3 +96,7 @@ body {
     background: rgba(0, 0, 0, 0.75);
     width: 100%;
 }
+
+.c-feature-15-desc{
+    text-indent: 2em;
+}
