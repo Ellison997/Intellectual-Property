@@ -47,6 +47,7 @@ body {
         width: 30px;
         height: 30px;
     }
+
 }
 
 .c-layout-revo-slider-4 .c-main-title-square {
@@ -96,53 +97,25 @@ body {
     height: 648px;
 }
 
-.helps {
-    border-right: 0;
-    border-top: 0;
-}
+
 
 .c-content-feature-4.c-content-lefts.c-diagonals {
     border-right: 50px solid;
     border-top: 50px solid transparent;
 }
 
-.c-content-app-1>.c-diagram>.c-lines-1 {
-    left: 40%;
+.c-content-app-1 > .c-diagram{
+    margin-top: 60px;
 }
-
-.c-content-app-1>.c-diagram>.c-wireframe {
-    left: 40%;
-}
-
-.c-content-app-1>.c-diagram>.c-phone-img {
-    left: 40%;
-}
-
-.c-content-app-1>.c-diagram>.c-point-1 {
-    left: 40%;
-}
-
-.c-content-app-1>.c-diagram>.c-point-2 {
-    left: 40%;
-}
-
-.c-content-app-1>.c-diagram>.c-point-3 {
-    left: 40%;
-}
-
-.c-content-app-1>.c-diagram>.c-point-4 {
-    left: 40%;
-}
-
-.font-sizes {
-    font-size: 22px;
+.retract {
+    text-indent: 1em !important;
 }
 
 .c-content-box.c-size-lg {
     padding: 0;
 }
 
-.c-content-box.c-bg-parallax .container {
+.c-content-box.c-bg-parallax .shade {
     padding: 120px 0;
     background: rgba(0, 0, 0, 0.75);
     width: 100%;
@@ -152,6 +125,4 @@ body {
     text-indent: 2em;
 }
 
-.c-content-feature-4 .c-feature-content {
-    width: 40%;
-}
+
