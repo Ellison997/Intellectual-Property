@@ -125,4 +125,6 @@ body {
     text-indent: 2em;
 }
 
-
+.c-layout-footer-6 {
+    padding-top: 0;
+}
