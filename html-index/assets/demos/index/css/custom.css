@@ -125,6 +125,10 @@ body {
     text-indent: 2em;
 }
 
-.c-layout-footer-6 {
-    padding-top: 0;
+
+.shade {
+    
+    background: rgba(0, 0, 0, 0.30);
+    width: 100%;
 }
+
