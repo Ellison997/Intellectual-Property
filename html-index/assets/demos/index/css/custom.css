@@ -132,3 +132,10 @@ body {
     width: 100%;
 }
 
+.buttTwo{
+    text-align: center;
+    position: relative;
+    padding-top: 1%;
+    padding-bottom: 7%;
+    margin: auto;
+}
