@@ -164,3 +164,8 @@ body {
     margin-bottom: 30px;
 }
 
+
+.c-postfooter .c-cols {
+    height: 38px;
+    line-height: 68px;
+}
