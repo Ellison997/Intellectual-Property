@@ -111,9 +111,9 @@ body {
     text-indent: 1em !important;
 }
 
-.c-content-box.c-size-lg {
+/* .c-content-box.c-size-lg {
     padding: 0;
-}
+} */
 
 .c-content-box.c-bg-parallax .shade {
     padding: 120px 0;
@@ -131,11 +131,22 @@ body {
     background: rgba(0, 0, 0, 0.30);
     width: 100%;
 }
-
+ 
 .buttTwo{
     text-align: center;
     position: relative;
     padding-top: 1%;
     padding-bottom: 7%;
     margin: auto;
+}
+
+.fa-color-blue{
+    color: #32c5d2 !important;
+}
+
+.tp-banner-container.tp-fullscreen{
+    height: auto;
+}
+.c-margin-bottom-30{
+    margin-bottom: 30px;
 }
