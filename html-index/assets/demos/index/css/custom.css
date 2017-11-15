@@ -50,7 +50,7 @@ body {
 
 }
 
-.c-layout-revo-slider-4 .c-main-title-square {
+.c-layout-revo-slider-4 .c-main-title-square { 
     background: rgba(0, 0, 0, 0.21);
 }
 
@@ -164,3 +164,8 @@ body {
     margin-bottom: 30px;
 }
 
+.c-layout-revo-slider-4 .customout { 
+    background: rgba(0, 0, 0, 0.21);
+    margin: 80px;
+    padding: 300px;
+}
