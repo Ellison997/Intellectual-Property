@@ -183,10 +183,12 @@ body {
     width: 100%;
 
 }
-
-
-
 .aboutfoot {
     margin: 0;
     padding-top: 60px;
 }
+
+.c-layout-footer-6{
+    padding-top: 0px;
+}
+
