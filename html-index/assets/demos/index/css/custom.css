@@ -168,7 +168,7 @@ body {
 
 .c-postfooter .c-cols {
     height: 38px;
-    line-height: 68px;
+    line-height: 38px;
 }
 .c-layout-revo-slider-6 .customout { 
     background: rgba(0, 0, 0, 0.21);
@@ -182,4 +182,11 @@ body {
     background: rgba(0, 0, 0, 0.21);
     width: 100%;
 
+}
+
+
+
+.aboutfoot {
+    margin: 0;
+    padding-top: 60px;
 }
