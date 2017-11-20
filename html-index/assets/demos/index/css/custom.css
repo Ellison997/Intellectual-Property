@@ -192,3 +192,7 @@ body {
     padding-top: 0px;
 }
 
+.row .c-body > .c-section > h3{
+    font-size: 28px !important;
+}
+
