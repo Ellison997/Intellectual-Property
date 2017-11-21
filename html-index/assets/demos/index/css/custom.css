@@ -196,3 +196,15 @@ body {
     font-size: 28px !important;
 }
 
+
+
+.aboutAddress{
+    min-width:470px;
+    max-width:480px;
+    margin-left: 8%;
+}
+.indexWeiquan{
+    min-width:490px;
+    max-width:500px;
+    margin-left: 2%;
+}
