@@ -173,12 +173,12 @@ body {
 .c-layout-revo-slider-6 .customout { 
     background: rgba(0, 0, 0, 0.21);
     margin: 80px;
-    padding: 300px;
+    padding: 300px 400px;
 
 }
 
 .rev_slider .customout { 
-   padding: 260px 0;
+   padding: 260px 400px;
     background: rgba(0, 0, 0, 0.21);
     width: 100%;
 
