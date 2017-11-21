@@ -208,3 +208,9 @@ body {
     max-width:500px;
     margin-left: 2%;
 }
+
+
+
+.hand{
+    cursor:pointer;
+}
