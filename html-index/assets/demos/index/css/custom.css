@@ -214,3 +214,12 @@ body {
 .hand{
     cursor:pointer;
 }
+.imgtop{
+    margin-top: 90px;
+}
+.imgheight{
+    height: 420px;
+}
+.pwidth{
+    width: 98%;
+}
