@@ -16,6 +16,7 @@ $(document).ready(function() {
             keyboard_direction: "horizontal",
             mouseScrollNavigation:"off",
             onHoverStop:"on",
+
             arrows: {
                 style:"circle",
                 enable:true,
