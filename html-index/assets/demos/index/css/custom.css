@@ -60,9 +60,12 @@ body .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{
 
 .tp-banner .qr-code {
     margin-top: 10px;
+    width: 148px !important;
+    height: 148px !important;
+    float: left;
 }
 
-.tp-banner .c-icons {
+/* .tp-banner .c-icons {
     width: auto;
     margin-top: 10px;
 }
@@ -77,7 +80,7 @@ body .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{
 
 .tp-banner .c-icons>.socicon-btn:hover {
     background-color: #eeeeee;
-}
+} */
 
 .c-layout-footer-6 .c-postfooter .c-corp {
     font-size: 15px;
@@ -230,4 +233,57 @@ body .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{
 
 .indexSpacing{
     letter-spacing:6px;
+}
+.c-icons{
+    width: 460px;
+    height: 200px;
+    margin-top: 18px;
+}
+
+.apple-content{
+    background: #fff;
+    padding: 0 0 0 38px;
+    width: 222px;
+    height: 66px;
+    line-height: 66px;
+    font-size: 30px;
+    border-radius: 3px;
+    color: #494751;
+    display: inline-block;
+    margin: 0 0 0 22px;
+}
+
+.android-content{
+    background: #fff;
+    padding: 0 0 0 38px;
+    width: 222px;
+    height: 66px;
+    line-height: 66px;
+    font-size: 30px;
+    border-radius: 3px;
+    color: #494751;
+    display: inline-block;
+    margin: 16px 0 0 22px;
+}
+
+.apple{
+    width: 29px !important;
+    height: 29px !important;
+    margin: 0 10px 8px 0 !important;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.android{
+    width: 29px !important;
+    height: 29px !important;
+    margin: 0 10px 8px 0 !important;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.index-margin{
+    position: relative;
+    top: 50px;
+    left: 10%;
 }
