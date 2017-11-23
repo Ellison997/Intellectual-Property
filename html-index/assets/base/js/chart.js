@@ -339,7 +339,7 @@ $(document).ready(function () {
 
         title: {      //标题组件
 
-            text: '全国授权趋势'
+            text: '山东授权趋势'
 
         },
 
