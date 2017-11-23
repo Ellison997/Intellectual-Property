@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     var shandongChart = echarts.init(document.getElementById('shandong'));
 
-    $.get("assets/map/province/shandong.json", function (shandongJson) {
+    $.get("assets/base/map/shandong.json", function (shandongJson) {
         echarts.registerMap('shandong', shandongJson);
         shandongChart.setOption({
             tooltip: {
