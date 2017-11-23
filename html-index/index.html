@@ -209,8 +209,8 @@
                                 data-videomp4="assets/base/media/video/video-2.mp4" data-videopreload="preload" data-videoloop="none"
                                 data-forceCover="1" data-aspectratio="16:9" data-autoplay="true" data-autoplayonlyfirsttime="false"
                                 data-nextslideatend="true"> </div> -->
-                            <div class="tp-caption customin" data-x="center" data-y="center" data-hoffset="" data-voffset="-30" data-speed="500"
-                                data-start="1000" data-transform_idle="o:1;" data-transform_in="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;"
+                            <div class="tp-caption customin" data-x="center" data-y="center" data-hoffset="" data-voffset="-30" data-speed="500" data-start="1000"
+                                data-transform_idle="o:1;" data-transform_in="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;"
                                 data-transform_out="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:600;e:Back.easeInOut;" data-splitin="none"
                                 data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600">
                                 <div class="c-main-title-square">
@@ -228,7 +228,7 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="tp-caption lft" data-x="center" data-y="center" data-voffset="130" data-speed="900" data-start="2000"  data-transform_idle="o:1;"
+                            <div class="tp-caption lft" data-x="center" data-y="center" data-voffset="130" data-speed="900" data-start="2000" data-transform_idle="o:1;"
                                 data-transform_in="x:100;y:100;rX:120;scaleX:0.75;scaleY:0.75;o:0;s:900;e:Back.easeInOut;" data-transform_out="x:100;y:100;rX:120;scaleX:0.75;scaleY:0.75;o:0;s:900;e:Back.easeInOut;">
                                 <a target="_blank" href="http://124.128.225.189:8060/pubsearch/patentsearch/searchHomeIndex-searchHomeIndex.shtml" class="c-action-btn btn btn-lg c-btn-square c-theme-btn c-btn-bold c-btn-uppercase"
                                     onclick="_czc.push(['_trackEvent', '按钮', '专利检索', '外部链接，专利检索信息系统']);">专利检索</a>
@@ -439,7 +439,7 @@
                         <div class="c-content-feature-15 c-bg-img-center">
                             <div class="c-feature-15-container c-bg-white">
                                 <h2 class="c-feature-15-title  c-font-uppercase c-theme-border">
-                                    <font>知识产权维权援助与举报投诉更便捷</font>      
+                                    <font>知识产权维权援助与举报投诉更便捷</font>
                                 </h2>
 
                                 <p class="c-feature-15-desc retract">
@@ -449,7 +449,7 @@
                                 </p>
                                 <p class="c-feature-15-desc retract">
                                     <font>0531-<span class="c-font-red-2 c-font-30 ">12330-1</span></font>
-                                    
+
                                 </p>
                                 <a class="c-feature-15-btn btn c-btn btn-lg c-theme-btn c-font-uppercase  c-btn-square" href="rights.html" alt="">
                                     <font>详情</font>
@@ -474,14 +474,44 @@
                             <p class="c-feature-15-desc">
                                 山东知识产权远程教育平台是国家知识产权局批准建设的中国知识产权远程教育平台的子平台，由山东省专利信息服务中心负责组织管理。
                             </p>
-                            <a class="c-feature-15-btn btn c-btn btn-lg c-theme-btn c-font-uppercase  c-btn-square" href="edu.html"
-                                alt="Purchase JANGO">更多</a>
+                            <a class="c-feature-15-btn btn c-btn btn-lg c-theme-btn c-font-uppercase  c-btn-square" href="edu.html" alt="Purchase JANGO">更多</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- END: CONTENT/FEATURES/FEATURES-15-1 -->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="chart-height-30 chart-margin">
+                        <div id="anw" class="chart-height-100">
+                        </div>
+                    </div>
+                    <div class="chart-height-30">
+                        <div id="anh" class="chart-height-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 chart-map">
+                    <div id="shandong" class="chart-shandong">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="chart-height-30 chart-margin">
+                        <div id="zhexian" class="chart-height-100">
+                        </div>
+                    </div>
+                    <div class="chart-height-30">
+                        <div id="zhuzhuang" class="chart-height-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- BEGIN: CONTENT/STATS/COUNTER-2 -->
         <div class="c-content-box c-size-md c-bg-parallax" id="home5">
             <div class="container">
@@ -576,18 +606,19 @@
     <!-- <script src="assets/base/js/components-shop.js" type="text/javascript"></script> -->
     <script src="assets/base/js/app.js" type="text/javascript"></script>
     <script>
-                $(document).ready(function () {
-                         App.init(); // init core    
-                });
+                                $(document).ready(function () {
+                                    App.init(); // init core    
+                                });
     </script>
 
- 
 
-   
+
+
     <!-- END: THEME SCRIPTS -->
     <!-- BEGIN: PAGE SCRIPTS -->
     <script src="assets/demos/index/js/scripts/revo-slider/slider-5.js" type="text/javascript"></script>
-    
+    <script src="assets/plugins/echarts.js"></script>
+    <script src="assets/base/js/chart.js"></script>
 </body>
 
 </html>
