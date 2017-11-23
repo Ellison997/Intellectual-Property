@@ -18,11 +18,11 @@ $(document).ready(function () {
                 },
                 itemStyle: {
                     normal: {
-                        areaColor: '#323c48',
+                        areaColor: '#3498DB',
                         borderColor: '#111'
                     },
                     emphasis: {
-                        areaColor: '#2a333d'
+                        areaColor: '#32c5d2'
                     }
                 }
             },
@@ -54,7 +54,7 @@ $(document).ready(function () {
                     { name: '莱芜市', value: [117.683221, 36.219356] },], // series数据内容
                     itemStyle: {
                         normal: {
-                            color: '#ddb926'
+                            color: '#C0FF3E'
                         }
                     }
                 },
@@ -68,7 +68,7 @@ $(document).ready(function () {
                     data: [{ name: '山东省', value: [117.096921, 36.662769] }], // series数据内容
                     itemStyle: {
                         normal: {
-                            color: '#ddb926'
+                            color: '#C0FF3E'
                         }
                     }
                 }
