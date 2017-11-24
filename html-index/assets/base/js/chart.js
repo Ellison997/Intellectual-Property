@@ -329,5 +329,13 @@ $(document).ready(function () {
 
     accreditNationwideLine.setOption(nationOption);   //参数设置方法  
     });
-  
+
+
+
+});
+
+//检测平台
+$.get("http://www.chuangxinjiance.com/analysisService/getAnalysisResult?flag=1.3&_=1511485598921", function (accreditdb) {
+    //document.getElementById('accredit').innerHTML=accreditdb.data.number;
+    
 });
