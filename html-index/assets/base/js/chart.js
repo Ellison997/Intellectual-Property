@@ -80,7 +80,7 @@ $(document).ready(function () {
     //初始化
 
     var zhexian = echarts.init(document.getElementById('zhexian'));
-
+    $.get("http://www.chuangxinjiance.com/analysisService/getAnalysisResult?flag=3.3&_=1511406398442", function (trend) {
     //参数设置
 
     option = {
@@ -115,7 +115,7 @@ $(document).ready(function () {
 
             boundaryGap: false,
 
-            data: ["2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"]
+            data: trend.data.xAxis
 
         },
 
@@ -135,7 +135,7 @@ $(document).ready(function () {
 
                 stack: '总量',
 
-                data: [3, 294, 656, 952, 959, 546, 631, 467, 496, 134]
+                data: trend.data.series[5].data
 
             }
         ]
@@ -143,59 +143,59 @@ $(document).ready(function () {
     };
 
     zhexian.setOption(option);   //参数设置方法    
-
+});
 
     //初始化
 
     var zhuzhuang = echarts.init(document.getElementById('zhuzhuang'));
+    $.get("http://www.chuangxinjiance.com/analysisService/getAnalysisResult?flag=3.2&_=1511406398441", function (license) {
+        option = {
 
-    option = {
+            title: {      //标题组件
 
-        title: {      //标题组件
+                text: '全国各省许可总量'
 
-            text: '全国各省许可总量'
+            },
 
-        },
-
-        color: ['#3398DB'],
-        tooltip: {
-            trigger: 'axis',
-            axisPointer: {            // 坐标轴指示器，坐标轴触发有效
-                type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
-            }
-        },
-        grid: {
-            left: '3%',
-            right: '4%',
-            bottom: '3%',
-            containLabel: true
-        },
-        xAxis: [
-            {
-                type: 'category',
-                data: ["浙江", "广东", "江苏", "北京", "黑龙江", "山东", "福建", "上海", "安徽", "四川"],
-                axisTick: {
-                    alignWithLabel: true
+            color: ['#3398DB'],
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+                    type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
                 }
-            }
-        ],
-        yAxis: [
-            {
-                type: 'value'
-            }
-        ],
-        series: [
-            {
-                name: '数量',
-                type: 'bar',
-                barWidth: '60%',
-                data: [22825, 22209, 17415, 8710, 6117, 5262, 5078, 4828, 3958, 3468]
-            }
-        ]
-    };
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis: [
+                {
+                    type: 'category',
+                    data: license.data.xAxis,
+                    axisTick: {
+                        alignWithLabel: true
+                    }
+                }
+            ],
+            yAxis: [
+                {
+                    type: 'value'
+                }
+            ],
+            series: [
+                {
+                    name: '数量',
+                    type: 'bar',
+                    barWidth: '60%',
+                    data: license.data.series[0].data
+                }
+            ]
+        };
 
-    zhuzhuang.setOption(option);   //参数设置方法    
-
+        zhuzhuang.setOption(option);   //参数设置方法    
+    });
     //山东各地市授权了初始化
     var accreditNationwideHistogram = echarts.init(document.getElementById('anh'));
 
