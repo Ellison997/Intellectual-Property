@@ -199,134 +199,65 @@ $(document).ready(function () {
     //山东各地市授权了初始化
     var accreditNationwideHistogram = echarts.init(document.getElementById('anh'));
 
+    var urlAnh="http://www.chuangxinjiance.com/analysisService/getAnalysisResult?flag=1.6&_=1511485598923";
+    var jsonAnh=null;    
+    $.ajax({
+          type: "get",//请求方式
+          url: urlAnh,//地址，就是json文件的请求路径
+          dataType: "json",//数据类型可以为 text xml json  script  jsonp
+　　 　　  success: function(result){//返回的参数就是 action里面所有的有get和set方法的参数
+          var jsonAnh= result.data.series;
+          jsonAnh[17].data=[1,0,0];
+          var shiyong=0;
+          var xinxing=0;
+          var faming =0;
+        for(var o in jsonAnh){  
+            shiyong+=jsonAnh[o].data[0];
+            xinxing+=jsonAnh[o].data[1];
+            faming+=jsonAnh[o].data[2];
+
+        }       
+
     HistogramOption = {
-        title: {      //标题组件
-
-            text: '山东各地市授权'
-
+        title : {
+            text: '山东省授权类别',
+            
+            x:'center'
         },
-        color: ['#003366', '#006699', '#4cabce', '#e5323e'],
-        tooltip: {
-            trigger: 'axis',
-            axisPointer: {
-                type: 'shadow'
-            }
+        tooltip : {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
         },
-
-        grid: {
-            left: '3%',
-            right: '4%',
-            bottom: '3%',
-            containLabel: true
-        },
-        xAxis: [
+        
+        series : [
             {
-                type: 'category',
-                axisTick: { show: false },
-                data: ["实用新型", "外观设计", "发明授权"]
-            }
-        ],
-        yAxis: [
-            {
-                type: 'value'
-            }
-        ],
-        series: [
-            {
-                name: '青岛',
-                type: 'bar',
-                barGap: 0,
-                data: [93611, 28689, 26440]
-            },
-            {
-                name: '济南',
-                type: 'bar',
-                data: [97154, 13854, 24509]
-            },
-            {
-                name: '潍坊',
-                type: 'bar',
-                data: [57272, 15873, 6347]
-            },
-            {
-                name: '烟台',
-                type: 'bar',
-                data: [36927, 13046, 7068]
-            },
-            {
-                name: '济宁',
-                type: 'bar',
-                barGap: 0,
-                data: [43422, 5328, 3229]
-            },
-            {
-                name: '淄博',
-                type: 'bar',
-                data: [32720, 9417, 6818]
-            },
-            {
-                name: '威海',
-                type: 'bar',
-                data: [21887, 9588, 3518]
-            },
-            {
-                name: '临沂',
-                type: 'bar',
-                barGap: 0,
-                data: [19818, 10182, 3852]
-            },
-            {
-                name: '东营',
-                type: 'bar',
-                data: [26616, 2804, 2371]
-            },
-            {
-                name: '泰安',
-                type: 'bar',
-                data: [22188, 2767, 2530]
-            },
-            {
-                name: '滨州',
-                type: 'bar',
-                barGap: 0,
-                data: [18623, 3043, 1872]
-            },
-            {
-                name: '德州',
-                type: 'bar',
-                data: [17203, 4188, 1642]
-            },
-            {
-                name: '聊城',
-                type: 'bar',
-                data: [15715, 2264, 2509]
-            },
-            {
-                name: '枣庄',
-                type: 'bar',
-                barGap: 0,
-                data: [13980, 3045, 1387]
-            },
-            {
-                name: '菏泽',
-                type: 'bar',
-                data: [13423, 3492, 1429]
-            },
-            {
-                name: '莱芜',
-                type: 'bar',
-                data: [16714, 268, 1357]
-            },
-            {
-                name: '日照',
-                type: 'bar',
-                data: [12146, 2364, 1017]
+                name: '分类',
+                type: 'pie',
+                radius : '60%',
+                center: ['50%', '65%'],
+                data:[
+                    {value:shiyong, name:'实用新型'},
+                    {value:xinxing, name:'外观设计'},
+                    {value:faming, name:'发明授权'}
+                    
+                ],
+                itemStyle: {
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                }
             }
         ]
+
+
     };
-
-
     accreditNationwideHistogram.setOption(HistogramOption);
+
+          }
+    });
+
 
 
     //全国授权量折线图初始化
