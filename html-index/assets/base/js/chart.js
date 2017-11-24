@@ -196,6 +196,8 @@ $(document).ready(function () {
 
         zhuzhuang.setOption(option);   //参数设置方法    
     });
+
+
     //山东各地市授权了初始化
     var accreditNationwideHistogram = echarts.init(document.getElementById('anh'));
 
@@ -265,8 +267,8 @@ $(document).ready(function () {
     var accreditNationwideLine = echarts.init(document.getElementById('anw'));
 
     //参数设置
-
-    option = {
+    $.get("http://www.chuangxinjiance.com/analysisService/getAnalysisResult?flag=1.4&_=1511490516953", function (accredit) {
+    nationOption = {
 
         title: {      //标题组件
 
@@ -298,7 +300,7 @@ $(document).ready(function () {
 
             boundaryGap: false,
 
-            data: ["2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"]
+            data: accredit.data.xAxis
 
         },
 
@@ -318,12 +320,14 @@ $(document).ready(function () {
 
                 stack: '总量',
 
-                data: [22060, 26644, 33796, 47950, 58519, 73898, 81855, 71729, 95648, 100081]
+                data: accredit.data.series[3].data
             }
 
         ]
 
     };
 
-    accreditNationwideLine.setOption(option);   //参数设置方法    
+    accreditNationwideLine.setOption(nationOption);   //参数设置方法  
+    });
+  
 });
