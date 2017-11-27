@@ -23,14 +23,22 @@ $(document).ready(function () {
                     },
                     emphasis: {
                         areaColor: '#32c5d2'
+                    },
+                },
+                label: {
+                    normal: {
+                        show: true
+                    },
+                    emphasis: {
+                        show: true
                     }
-                }
+                },
             },
             series: [
 
                 {
                     name: '市', // series名称
-                    type: 'scatter', // series图表类型
+                    type: 'map', // series图表类型
                     coordinateSystem: 'geo', // series坐标系类型
                     symbolSize: function () {
                         return 15;
@@ -60,7 +68,7 @@ $(document).ready(function () {
                 },
                 {
                     name: '省', // series名称
-                    type: 'effectScatter', // series图表类型
+                    type: 'map', // series图表类型
                     coordinateSystem: 'geo', // series坐标系类型
                     symbolSize: function () {
                         return 20;
