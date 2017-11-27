@@ -324,3 +324,7 @@ body,.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{
 .chart-margin-right{
     margin-right:10%;
 }
+
+.tp-bullet{
+    top: 20px !important;
+}
