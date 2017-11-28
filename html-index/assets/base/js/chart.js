@@ -160,7 +160,11 @@ $(document).ready(function () {
 
     var zhuzhuang = echarts.init(document.getElementById('zhuzhuang'));
     $.get("http://www.chuangxinjiance.com/analysisService/getAnalysisResult?flag=3.2&_=1511406398441", function (license) {
-        license.data.xAxis.splice(4,1);
+        license.data.xAxis.pop();
+        license.data.xAxis.pop();
+        license.data.xAxis.pop();
+        license.data.series[0].data.pop();
+        license.data.series[0].data.pop();
         license.data.series[0].data.pop();
         option = {
 
@@ -188,7 +192,11 @@ $(document).ready(function () {
                     type: 'category',
                     data: license.data.xAxis,
                     axisTick: {
-                        alignWithLabel: true
+                        alignWithLabel: true,
+                        interval:0
+                    },
+                    axisLabel:{
+                        interval:0
                     }
                 }
             ],
