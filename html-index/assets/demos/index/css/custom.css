@@ -317,15 +317,19 @@ body,.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{
 
 .chart-margin-left{
     margin-left:10%;
+    margin-right:-25%;
+    z-index: 10;
 }
 
 .chart-margin-right{
     margin-right:10%;
+    margin-left:-25%;
+    z-index: 10;
 }
 
 .tp-bullet{
     top: 20px !important;
 }
-.chart-margin-top{
+.chart-margin-top{ 
     margin-top: 10vh;
 }
