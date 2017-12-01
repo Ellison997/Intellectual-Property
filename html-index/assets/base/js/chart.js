@@ -24,21 +24,13 @@ $(document).ready(function () {
                     emphasis: {
                         areaColor: '#32c5d2'
                     },
-                },
-                label: {
-                    normal: {
-                        show: true
-                    },
-                    emphasis: {
-                        show: true
-                    }
-                },
+                }
             },
             series: [
 
                 {
                     name: '市', // series名称
-                    type: 'map', // series图表类型
+                    type: 'scatter', // series图表类型
                     coordinateSystem: 'geo', // series坐标系类型
                     symbolSize: function () {
                         return 15;
@@ -60,6 +52,16 @@ $(document).ready(function () {
                     { name: '临沂市', value: [118.356682, 35.110923] },
                     { name: '菏泽市', value: [115.468333, 35.24086] },
                     { name: '莱芜市', value: [117.683221, 36.219356] },], // series数据内容
+                    label: {
+                        normal: {
+                            formatter:'{b}',
+                            position: 'right',
+                            show: true
+                        },
+                        emphasis: {
+                            show: true
+                        }
+                    },
                     itemStyle: {
                         normal: {
                             color: '#C0FF3E'
@@ -68,12 +70,22 @@ $(document).ready(function () {
                 },
                 {
                     name: '省', // series名称
-                    type: 'map', // series图表类型
+                    type: 'scatter', // series图表类型
                     coordinateSystem: 'geo', // series坐标系类型
                     symbolSize: function () {
                         return 20;
                     },
                     data: [{ name: '山东省', value: [117.096921, 36.662769] }], // series数据内容
+                    label: {
+                        normal: {
+                            formatter:'{b}',
+                            position: 'right',
+                            show: true
+                        },
+                        emphasis: {
+                            show: true
+                        }
+                    },
                     itemStyle: {
                         normal: {
                             color: '#C0FF3E'
