@@ -246,12 +246,18 @@ $(document).ready(function () {
             var shiyong = 0;
             var xinxing = 0;
             var faming = 0;
-            for (var o in jsonAnh) {
-                shiyong += jsonAnh[o].data[0];
-                xinxing += jsonAnh[o].data[1];
-                faming += jsonAnh[o].data[2];
 
+            for(i=0;i<17;i++){
+                shiyong += jsonAnh[i].data[0];
+                xinxing += jsonAnh[i].data[1];
+                faming += jsonAnh[i].data[2];
             }
+            // for (var o in jsonAnh) {
+            //     shiyong += jsonAnh[o].data[0];
+            //     xinxing += jsonAnh[o].data[1];
+            //     faming += jsonAnh[o].data[2];
+
+            // }
 
             HistogramOption = {
                 title: {
