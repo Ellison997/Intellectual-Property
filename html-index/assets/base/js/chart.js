@@ -54,7 +54,7 @@ $(document).ready(function () {
                     { name: '莱芜市', value: [117.683221, 36.219356] },], // series数据内容
                     label: {
                         normal: {
-                            formatter:'{b}',
+                            formatter: '{b}',
                             position: 'right',
                             show: true
                         },
@@ -78,7 +78,7 @@ $(document).ready(function () {
                     data: [{ name: '山东省', value: [117.096921, 36.662769] }], // series数据内容
                     label: {
                         normal: {
-                            formatter:'{b}',
+                            formatter: '{b}',
                             position: 'right',
                             show: true
                         },
@@ -205,10 +205,10 @@ $(document).ready(function () {
                     data: license.data.xAxis,
                     axisTick: {
                         alignWithLabel: true,
-                        interval:0
+                        interval: 0
                     },
-                    axisLabel:{
-                        interval:0
+                    axisLabel: {
+                        interval: 0
                     }
                 }
             ],
@@ -247,17 +247,12 @@ $(document).ready(function () {
             var xinxing = 0;
             var faming = 0;
 
-            for(i=0;i<17;i++){
+            for (i = 0; i < 17; i++) {
                 shiyong += jsonAnh[i].data[0];
                 xinxing += jsonAnh[i].data[1];
                 faming += jsonAnh[i].data[2];
             }
-            // for (var o in jsonAnh) {
-            //     shiyong += jsonAnh[o].data[0];
-            //     xinxing += jsonAnh[o].data[1];
-            //     faming += jsonAnh[o].data[2];
 
-            // }
 
             HistogramOption = {
                 title: {
@@ -377,8 +372,38 @@ $(document).ready(function () {
 
 });
 
-//检测平台
-$.get("http://www.chuangxinjiance.com/analysisService/getAnalysisResult?flag=1.3&_=1511485598921", function (accreditdb) {
-    //document.getElementById('accredit').innerHTML=accreditdb.data.number;
+var options = {
+    useEasing: true,
+    useGrouping: true,
+    separator: ',',
+    decimal: '.',
+};
 
+//检测平台
+//授权量
+$.get("http://www.chuangxinjiance.com/analysisService/getAnalysisResult?flag=1.3&_=1511485598921", function (accreditdb) {
+    var one = new CountUp('accredit', 0, accreditdb.data.number, 0, 2.5, options);
+    if (!one.error) {
+        one.start();
+    } else {
+        console.error(one.error);
+    }
+});
+//有效量
+$.get("http://www.chuangxinjiance.com/analysisService/getAnalysisResult?flag=2.3&_=1515485770640", function (valid) {
+    var two = new CountUp('valid', 0, valid.data.number, 0, 2.5, options);
+    if (!two.error) {
+        two.start();
+    } else {
+        console.error(two.error);
+    }
+});
+//转让情况
+$.get("http://www.chuangxinjiance.com/analysisService/getAnalysisResult?flag=4.1&_=1515485770647", function (transfer) {
+    var two = new CountUp('transfer', 0, transfer.data.number, 0, 2.5, options);
+    if (!two.error) {
+        two.start();
+    } else {
+        console.error(two.error);
+    }
 });
